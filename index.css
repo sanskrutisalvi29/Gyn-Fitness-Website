@@ -1,0 +1,1026 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* LOGO */
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* NAV LINKS */
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links li a {
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.nav-links li a:hover,
+.nav-links li .active {
+    color: #f44322;
+}
+
+
+/* SOCIAL ICONS */
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 11px;
+}
+
+.social-icons a:hover {
+    color: #f44322;
+}
+
+
+/* ================= HERO ================= */
+.hero {
+    width: 100%;
+    height: 470px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+        ),
+        url("assets/hero-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero-content {
+    margin-top: 40px;
+}
+
+
+.hero-content p {
+    font-size: 13px;
+    color: #aaaaaa;
+    margin-bottom: 18px;
+}
+
+
+.hero-content h1 {
+    font-size: 32px;
+    line-height: 1.25;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+
+/* ================= HERO BUTTONS ================= */
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hero-buttons a {
+    padding: 12px 22px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+.btn-start {
+    color: white;
+}
+
+
+.btn-learn {
+    color: #f44322;
+    border: 1px solid #f44322;
+}
+
+
+.btn-start:hover {
+    color: #f44322;
+}
+
+
+.btn-learn:hover {
+    background-color: #f44322;
+    color: white;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        width: 92%;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        width: 90%;
+        height: 60px;
+    }
+
+    .logo {
+        font-size: 15px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+
+    .hero {
+        height: 450px;
+    }
+
+    .hero-content {
+        padding: 20px;
+    }
+
+    .hero-content p {
+        font-size: 11px;
+    }
+
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .hero-buttons {
+        flex-direction: row;
+    }
+
+    .hero-buttons a {
+        padding: 10px 15px;
+    }
+}
+/* ================= NEW TO GYMSO SECTION ================= */
+
+.gym-info {
+    width: 100%;
+    background-color: #151515;
+    padding: 65px 0;
+}
+
+.gym-info-container {
+    width: 75%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.gym-info-box {
+    width: 50%;
+}
+
+.gym-info-box h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.membership {
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+.price {
+    font-size: 12px;
+    color: #aaaaaa;
+    margin-bottom: 18px;
+}
+
+.description {
+    width: 90%;
+    color: #777777;
+    font-size: 11px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+
+/* MEMBER BUTTON */
+
+.member-btn {
+    display: inline-block;
+    background-color: #f44322;
+    color: white;
+
+    padding: 12px 45px;
+
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.member-btn:hover {
+    background-color: #ffffff;
+    color: #f44322;
+}
+
+
+/* ================= WORKING HOURS ================= */
+
+.working-hours p {
+    font-size: 11px;
+    color: #eeeeee;
+    margin-bottom: 5px;
+}
+
+.working-hours strong {
+    color: white;
+}
+
+.working-hours span {
+    display: block;
+    color: #777777;
+    font-size: 10px;
+    margin-bottom: 18px;
+}
+
+.working-hours .saturday {
+    margin-top: 5px;
+}
+
+
+/* ================= SECTION 2 RESPONSIVE ================= */
+
+@media (max-width: 700px) {
+
+    .gym-info {
+        padding: 50px 0;
+    }
+
+    .gym-info-container {
+        width: 85%;
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    .gym-info-box {
+        width: 100%;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .member-btn {
+        padding: 12px 30px;
+    }
+}
+/* ================= ABOUT GYMSO SECTION ================= */
+
+.about-gym {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 70px 0;
+}
+
+.about-container {
+    width: 78%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+
+/* ================= ABOUT TEXT ================= */
+
+.about-text {
+    width: 40%;
+}
+
+.about-text h2 {
+    color: #222222;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: #777777;
+    font-size: 11px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+
+/* ================= TRAINERS ================= */
+
+.trainers {
+    width: 55%;
+
+    display: flex;
+    gap: 15px;
+}
+
+.trainer-card {
+    width: 50%;
+    background-color: #ffffff;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.trainer-card img {
+    width: 100%;
+    height: 170px;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* ================= TRAINER INFORMATION ================= */
+
+.trainer-info {
+    min-height: 65px;
+    padding: 10px 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trainer-info h3 {
+    color: #222222;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.trainer-info p {
+    color: #888888;
+    font-size: 9px;
+}
+
+
+/* ================= TRAINER SOCIAL ICONS ================= */
+
+.trainer-social {
+    display: flex;
+    gap: 10px;
+}
+
+.trainer-social a {
+    color: #777777;
+    font-size: 10px;
+}
+
+.trainer-social a:hover {
+    color: #f44322;
+}
+
+
+/* ================= ABOUT RESPONSIVE ================= */
+
+@media (max-width: 800px) {
+
+    .about-container {
+        width: 85%;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .trainers {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .about-gym {
+        padding: 50px 0;
+    }
+
+    .trainers {
+        flex-direction: column;
+    }
+
+    .trainer-card {
+        width: 100%;
+    }
+
+    .trainer-card img {
+        height: 220px;
+    }
+}
+/* ================= TRAINING CLASSES ================= */
+
+.classes-section {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 65px 0 70px;
+}
+
+.classes-container {
+    width: 82%;
+    margin: auto;
+}
+
+
+/* ================= SECTION TITLE ================= */
+
+.classes-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.classes-title p {
+    color: #999999;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.classes-title h2 {
+    color: #222222;
+    font-size: 20px;
+}
+
+
+/* ================= CLASS CARDS ================= */
+
+.class-cards {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.class-card {
+    width: 33.33%;
+    background-color: #ffffff;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.class-card img {
+    width: 100%;
+    height: 150px;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* ================= CLASS CONTENT ================= */
+
+.class-content {
+    padding: 12px 13px 15px;
+}
+
+.class-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.class-heading h3 {
+    color: #222222;
+    font-size: 14px;
+}
+
+
+/* ================= PRICE CIRCLE ================= */
+
+.price-circle {
+    width: 35px;
+    height: 35px;
+
+    background-color: #f44322;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 9px;
+    font-weight: bold;
+}
+
+
+/* ================= TRAINER NAME ================= */
+
+.trainer-name {
+    color: #888888;
+    font-size: 9px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+/* ================= DESCRIPTION ================= */
+
+.class-description {
+    color: #777777;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+
+/* ================= CLASSES RESPONSIVE ================= */
+
+@media (max-width: 800px) {
+
+    .classes-container {
+        width: 85%;
+    }
+
+    .class-cards {
+        flex-wrap: wrap;
+    }
+
+    .class-card {
+        width: 48%;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .classes-section {
+        padding: 50px 0;
+    }
+
+    .class-cards {
+        flex-direction: column;
+    }
+
+    .class-card {
+        width: 100%;
+    }
+
+    .class-card img {
+        height: 200px;
+    }
+}
+/* ================= WORKOUT TIMETABLE ================= */
+
+.schedule-section {
+    width: 100%;
+    background-color: #151515;
+    padding: 65px 0 70px;
+}
+
+.schedule-container {
+    width: 82%;
+    margin: auto;
+}
+
+
+/* ================= SCHEDULE TITLE ================= */
+
+.schedule-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.schedule-title p {
+    color: #777777;
+    font-size: 10px;
+    margin-bottom: 4px;
+}
+
+.schedule-title h2 {
+    color: white;
+    font-size: 20px;
+}
+
+
+/* ================= TABLE ================= */
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.workout-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+
+/* TABLE HEADER */
+
+.workout-table th {
+    height: 35px;
+
+    background-color: #f44322;
+    color: white;
+
+    border-right: 1px solid #151515;
+
+    font-size: 9px;
+    font-weight: bold;
+}
+
+
+/* TIME COLUMN */
+
+.workout-table .time {
+    width: 75px;
+
+    background-color: #f44322;
+    color: white;
+
+    font-size: 9px;
+    font-weight: bold;
+
+    text-align: center;
+
+    border-bottom: 1px solid #151515;
+}
+
+
+/* TABLE CELLS */
+
+.workout-table td {
+    height: 58px;
+
+    color: #eeeeee;
+
+    text-align: center;
+
+    border: 1px solid #252525;
+
+    font-size: 9px;
+}
+
+
+/* CLASS NAME */
+
+.workout-table td strong {
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 9px;
+
+    margin-bottom: 4px;
+}
+
+
+/* CLASS TIME */
+
+.workout-table td span {
+    display: block;
+
+    color: #777777;
+
+    font-size: 7px;
+}
+
+
+/* EMPTY CELLS */
+
+.workout-table td:empty {
+    background-color: #151515;
+}
+
+
+/* ================= TABLE HOVER ================= */
+
+.workout-table tbody td:not(.time):hover {
+    background-color: #202020;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 800px) {
+
+    .schedule-container {
+        width: 90%;
+    }
+
+    .workout-table {
+        min-width: 700px;
+    }
+
+    .table-wrapper {
+        overflow-x: auto;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 550px) {
+
+    .schedule-section {
+        padding: 50px 0;
+    }
+
+    .schedule-title h2 {
+        font-size: 18px;
+    }
+
+    .workout-table {
+        min-width: 700px;
+    }
+}
+/* ================= CONTACT SECTION ================= */
+
+.contact-section {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 65px 0;
+}
+
+.contact-container {
+    width: 72%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+
+/* ================= CONTACT FORM ================= */
+
+.contact-form {
+    width: 50%;
+}
+
+.contact-form h2,
+.location h2 {
+    color: #222222;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+
+/* FORM */
+
+.contact-form form {
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+
+    border: 1px solid #e5e5e5;
+
+    padding: 11px;
+
+    margin-bottom: 10px;
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+
+    outline: none;
+}
+
+.contact-form input {
+    height: 38px;
+}
+
+.contact-form textarea {
+    height: 85px;
+    resize: none;
+}
+
+
+/* INPUT FOCUS */
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #aaaaaa;
+}
+
+
+/* SEND BUTTON */
+
+.contact-form button {
+    width: 100%;
+    height: 38px;
+
+    border: none;
+
+    background-color: #151515;
+    color: white;
+
+    font-size: 9px;
+
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #f44322;
+}
+
+
+/* ================= LOCATION ================= */
+
+.location {
+    width: 50%;
+}
+
+.address {
+    color: #777777;
+
+    font-size: 10px;
+
+    line-height: 1.6;
+
+    margin-bottom: 22px;
+}
+
+.address i {
+    color: #f44322;
+    margin-right: 6px;
+}
+
+
+/* ================= MAP ================= */
+
+.map {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+}
+
+
+/* ================= CONTACT RESPONSIVE ================= */
+
+@media (max-width: 800px) {
+
+    .contact-container {
+        width: 85%;
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    .contact-form,
+    .location {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .contact-section {
+        padding: 50px 0;
+    }
+
+    .contact-form h2,
+    .location h2 {
+        font-size: 17px;
+    }
+
+    .map {
+        height: 220px;
+    }
+}
+/* ================= FOOTER ================= */
+
+.footer {
+    width: 100%;
+    background-color: #151515;
+    padding: 25px 0;
+}
+
+.footer-container {
+    width: 82%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container p {
+    color: #777777;
+    font-size: 9px;
+}
+
+
+/* ================= FOOTER SOCIAL ================= */
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a {
+    color: #777777;
+    font-size: 10px;
+}
+
+.footer-social a:hover {
+    color: #f44322;
+}
+
+
+/* ================= FOOTER RESPONSIVE ================= */
+
+@media (max-width: 550px) {
+
+    .footer {
+        padding: 25px 0;
+    }
+
+    .footer-container {
+        width: 85%;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer-container p {
+        font-size: 8px;
+    }
+
+}
